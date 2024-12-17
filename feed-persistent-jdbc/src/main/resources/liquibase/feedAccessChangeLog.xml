@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+  <changeSet id="1_feed_activation" author="Sofus">
+    <createTable tableName="FEED_ACTIVATION">
+      <column name="POINTER" type="VARCHAR(200)">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="ACTIVE" type="BOOLEAN">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+  </changeSet>
+</databaseChangeLog>
