@@ -1,0 +1,17 @@
+*.uuid
+*.iml
+*.idea*
+*.class
+*target/
+logs/*
+dokumentasjon/wiki/
+*.~lock.*
+wiki/*
+
+
+# Cucumber reatures
+*.feature
+
+.classpath
+.project
+.settings
